@@ -10,13 +10,14 @@
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
   <div class="container">
     <a class="navbar-brand brand" href="index.html">Luxe <span>Nails</span></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="nav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
         <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
         <li class="nav-item"><a class="nav-link" href="booking.html">Book Now</a></li>
@@ -34,14 +35,17 @@
       <a class="btn btn-gold me-2" href="booking.html">Book an appointment</a>
       <a class="btn btn-outline-light rounded-pill px-4 py-2" href="services.html">View services</a>
     </div>
+    <p class="reveal"><span class="hero-hours">Open Tue–Sun · Fictional demo studio — no real bookings are taken</span></p>
+    <a class="scroll-cue reveal" href="#about">Explore the studio <span class="cue-arrow" aria-hidden="true">↓</span></a>
   </div>
 </header>
 
-<section class="section">
+<main id="main">
+<section class="section" id="about">
   <div class="container">
     <div class="row align-items-center g-5">
       <div class="col-lg-6 reveal">
-        <img src="https://picsum.photos/seed/luxe-about/900/700" class="img-fluid rounded-4 shadow" alt="Inside the Luxe Nails Studio">
+        <img src="https://picsum.photos/seed/luxe-about/900/700" class="img-fluid rounded-4 shadow" alt="Inside the fictional Luxe Nails Studio — demo photo" loading="lazy">
       </div>
       <div class="col-lg-6 reveal">
         <p class="eyebrow">About the studio</p>
@@ -66,15 +70,15 @@
     </div>
     <div class="row g-4">
       <div class="col-md-4 reveal"><div class="card card-luxe h-100">
-        <img src="https://picsum.photos/seed/luxe-gel/800/600" class="card-img-top" alt="Gel manicure">
+        <img src="https://picsum.photos/seed/luxe-gel/800/600" class="card-img-top" alt="Gel manicure service — demo photo" loading="lazy">
         <div class="card-body p-4"><h3 class="h5">Gel Manicure</h3><p class="text-muted">Chip-free shine for up to three weeks, with cuticle care and a hand massage.</p><div class="d-flex justify-content-between align-items-center"><span class="price">$45</span><a href="booking.html" class="btn btn-sm btn-outline-plum">Book</a></div></div>
       </div></div>
       <div class="col-md-4 reveal"><div class="card card-luxe h-100">
-        <img src="https://picsum.photos/seed/luxe-pedi/800/600" class="card-img-top" alt="Luxury spa pedicure">
+        <img src="https://picsum.photos/seed/luxe-pedi/800/600" class="card-img-top" alt="Luxury spa pedicure service — demo photo" loading="lazy">
         <div class="card-body p-4"><h3 class="h5">Luxury Spa Pedicure</h3><p class="text-muted">Warm soak, exfoliation, hot-towel finish and your choice of polish.</p><div class="d-flex justify-content-between align-items-center"><span class="price">$58</span><a href="booking.html" class="btn btn-sm btn-outline-plum">Book</a></div></div>
       </div></div>
       <div class="col-md-4 reveal"><div class="card card-luxe h-100">
-        <img src="https://picsum.photos/seed/luxe-art/800/600" class="card-img-top" alt="Nail art and design">
+        <img src="https://picsum.photos/seed/luxe-art/800/600" class="card-img-top" alt="Nail art and design service — demo photo" loading="lazy">
         <div class="card-body p-4"><h3 class="h5">Nail Art &amp; Design</h3><p class="text-muted">Hand-painted detail, chrome, French tips and seasonal designs — two accent nails included.</p><div class="d-flex justify-content-between align-items-center"><span class="price">from $20</span><a href="booking.html" class="btn btn-sm btn-outline-plum">Book</a></div></div>
       </div></div>
     </div>
@@ -82,6 +86,17 @@
 </section>
 
 <section class="section">
+  <div class="container">
+    <div class="text-center mb-5 reveal"><p class="eyebrow">Your visit</p><h2>Three easy steps</h2></div>
+    <div class="row g-4 text-center">
+      <div class="col-md-4 reveal"><div class="card card-luxe step-card p-4 h-100"><div class="step-num" aria-hidden="true">1</div><h3 class="h5">Choose a service</h3><p class="text-muted mb-0">Browse the menu and prices — every service includes cuticle care and a hand massage.</p></div></div>
+      <div class="col-md-4 reveal"><div class="card card-luxe step-card p-4 h-100"><div class="step-num" aria-hidden="true">2</div><h3 class="h5">Book a time</h3><p class="text-muted mb-0">Pick a day and time slot on the booking page. The studio confirms by phone.</p></div></div>
+      <div class="col-md-4 reveal"><div class="card card-luxe step-card p-4 h-100"><div class="step-num" aria-hidden="true">3</div><h3 class="h5">Relax &amp; enjoy</h3><p class="text-muted mb-0">Arrive a few minutes early, settle in, and leave with nails done properly — never rushed.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
   <div class="container text-center reveal">
     <p class="eyebrow">Visit us</p>
     <h2>Open Tuesday – Sunday</h2>
@@ -90,16 +105,17 @@
     <a class="btn btn-gold mt-2" href="booking.html">Book your visit</a>
   </div>
 </section>
+</main>
 
 <footer class="py-5">
   <div class="container d-flex flex-column flex-md-row justify-content-between gap-3">
     <div><strong class="serif fs-5">Luxe Nails Studio</strong><p class="mb-0 small mt-2">A fictional demo salon built as a self-directed portfolio piece.<br>Not a real business — no real bookings are taken.</p></div>
-    <div class="small">
+    <nav class="small" aria-label="Footer">
       <a href="index.html" class="d-block mb-1">Home</a>
       <a href="services.html" class="d-block mb-1">Services</a>
       <a href="gallery.html" class="d-block mb-1">Gallery</a>
       <a href="booking.html" class="d-block">Book Now</a>
-    </div>
+    </nav>
   </div>
   <div class="container small mt-4 opacity-75">© <span id="year">2026</span> Luxe Nails Studio (demo). Photos: picsum.photos.</div>
 </footer>

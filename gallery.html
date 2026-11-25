@@ -10,38 +10,40 @@
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
   <div class="container">
     <a class="navbar-brand brand" href="index.html">Luxe <span>Nails</span></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="nav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a></li>
         <li class="nav-item"><a class="nav-link" href="booking.html">Book Now</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
+<main id="main">
 <section class="section">
   <div class="container">
     <div class="text-center mb-5 reveal">
       <p class="eyebrow">The gallery</p>
       <h2>Recent work from the studio</h2>
-      <p class="text-muted">Demo imagery (picsum.photos) standing in for studio photography — this is a fictional salon.</p>
+      <p class="text-muted">Demo imagery (picsum.photos) standing in for studio photography — this is a fictional salon. Select any image to view it larger.</p>
     </div>
     <div class="row g-4">
-      <div class="col-6 col-md-4 reveal"><img src="https://picsum.photos/seed/luxe-g1/800/600" class="gallery-img" alt="Nail work sample 1" loading="lazy"></div>
-      <div class="col-6 col-md-4 reveal"><img src="https://picsum.photos/seed/luxe-g2/800/600" class="gallery-img" alt="Nail work sample 2" loading="lazy"></div>
-      <div class="col-6 col-md-4 reveal"><img src="https://picsum.photos/seed/luxe-g3/800/600" class="gallery-img" alt="Nail work sample 3" loading="lazy"></div>
-      <div class="col-6 col-md-4 reveal"><img src="https://picsum.photos/seed/luxe-g4/800/600" class="gallery-img" alt="Nail work sample 4" loading="lazy"></div>
-      <div class="col-6 col-md-4 reveal"><img src="https://picsum.photos/seed/luxe-g5/800/600" class="gallery-img" alt="Nail work sample 5" loading="lazy"></div>
-      <div class="col-6 col-md-4 reveal"><img src="https://picsum.photos/seed/luxe-g6/800/600" class="gallery-img" alt="Nail work sample 6" loading="lazy"></div>
-      <div class="col-6 col-md-4 reveal"><img src="https://picsum.photos/seed/luxe-g7/800/600" class="gallery-img" alt="Nail work sample 7" loading="lazy"></div>
-      <div class="col-6 col-md-4 reveal"><img src="https://picsum.photos/seed/luxe-g8/800/600" class="gallery-img" alt="Nail work sample 8" loading="lazy"></div>
-      <div class="col-6 col-md-4 reveal"><img src="https://picsum.photos/seed/luxe-g9/800/600" class="gallery-img" alt="Nail work sample 9" loading="lazy"></div>
+      <div class="col-6 col-md-4 reveal"><figure class="gallery-item"><button type="button" class="gallery-btn" data-lightbox data-full="https://picsum.photos/seed/luxe-g1/1200/900" data-caption="Gel manicure look — demo image 1 of 9" aria-label="Enlarge: Gel manicure look, demo image 1 of 9"><img src="https://picsum.photos/seed/luxe-g1/800/600" class="gallery-img" alt="Gel manicure look — demo image 1 of 9" loading="lazy"><span class="gallery-cap">Gel manicure look</span></button></figure></div>
+      <div class="col-6 col-md-4 reveal"><figure class="gallery-item"><button type="button" class="gallery-btn" data-lightbox data-full="https://picsum.photos/seed/luxe-g2/1200/900" data-caption="French tip look — demo image 2 of 9" aria-label="Enlarge: French tip look, demo image 2 of 9"><img src="https://picsum.photos/seed/luxe-g2/800/600" class="gallery-img" alt="French tip look — demo image 2 of 9" loading="lazy"><span class="gallery-cap">French tip look</span></button></figure></div>
+      <div class="col-6 col-md-4 reveal"><figure class="gallery-item"><button type="button" class="gallery-btn" data-lightbox data-full="https://picsum.photos/seed/luxe-g3/1200/900" data-caption="Spa pedicure look — demo image 3 of 9" aria-label="Enlarge: Spa pedicure look, demo image 3 of 9"><img src="https://picsum.photos/seed/luxe-g3/800/600" class="gallery-img" alt="Spa pedicure look — demo image 3 of 9" loading="lazy"><span class="gallery-cap">Spa pedicure look</span></button></figure></div>
+      <div class="col-6 col-md-4 reveal"><figure class="gallery-item"><button type="button" class="gallery-btn" data-lightbox data-full="https://picsum.photos/seed/luxe-g4/1200/900" data-caption="Nail art detail look — demo image 4 of 9" aria-label="Enlarge: Nail art detail look, demo image 4 of 9"><img src="https://picsum.photos/seed/luxe-g4/800/600" class="gallery-img" alt="Nail art detail look — demo image 4 of 9" loading="lazy"><span class="gallery-cap">Nail art detail look</span></button></figure></div>
+      <div class="col-6 col-md-4 reveal"><figure class="gallery-item"><button type="button" class="gallery-btn" data-lightbox data-full="https://picsum.photos/seed/luxe-g5/1200/900" data-caption="Acrylic set look — demo image 5 of 9" aria-label="Enlarge: Acrylic set look, demo image 5 of 9"><img src="https://picsum.photos/seed/luxe-g5/800/600" class="gallery-img" alt="Acrylic set look — demo image 5 of 9" loading="lazy"><span class="gallery-cap">Acrylic set look</span></button></figure></div>
+      <div class="col-6 col-md-4 reveal"><figure class="gallery-item"><button type="button" class="gallery-btn" data-lightbox data-full="https://picsum.photos/seed/luxe-g6/1200/900" data-caption="Chrome finish look — demo image 6 of 9" aria-label="Enlarge: Chrome finish look, demo image 6 of 9"><img src="https://picsum.photos/seed/luxe-g6/800/600" class="gallery-img" alt="Chrome finish look — demo image 6 of 9" loading="lazy"><span class="gallery-cap">Chrome finish look</span></button></figure></div>
+      <div class="col-6 col-md-4 reveal"><figure class="gallery-item"><button type="button" class="gallery-btn" data-lightbox data-full="https://picsum.photos/seed/luxe-g7/1200/900" data-caption="Classic polish look — demo image 7 of 9" aria-label="Enlarge: Classic polish look, demo image 7 of 9"><img src="https://picsum.photos/seed/luxe-g7/800/600" class="gallery-img" alt="Classic polish look — demo image 7 of 9" loading="lazy"><span class="gallery-cap">Classic polish look</span></button></figure></div>
+      <div class="col-6 col-md-4 reveal"><figure class="gallery-item"><button type="button" class="gallery-btn" data-lightbox data-full="https://picsum.photos/seed/luxe-g8/1200/900" data-caption="Bridal nails look — demo image 8 of 9" aria-label="Enlarge: Bridal nails look, demo image 8 of 9"><img src="https://picsum.photos/seed/luxe-g8/800/600" class="gallery-img" alt="Bridal nails look — demo image 8 of 9" loading="lazy"><span class="gallery-cap">Bridal nails look</span></button></figure></div>
+      <div class="col-6 col-md-4 reveal"><figure class="gallery-item"><button type="button" class="gallery-btn" data-lightbox data-full="https://picsum.photos/seed/luxe-g9/1200/900" data-caption="Seasonal design look — demo image 9 of 9" aria-label="Enlarge: Seasonal design look, demo image 9 of 9"><img src="https://picsum.photos/seed/luxe-g9/800/600" class="gallery-img" alt="Seasonal design look — demo image 9 of 9" loading="lazy"><span class="gallery-cap">Seasonal design look</span></button></figure></div>
     </div>
     <div class="text-center mt-5 reveal">
       <p class="text-muted">Like a look? Bring the photo to your appointment.</p>
@@ -49,6 +51,22 @@
     </div>
   </div>
 </section>
+</main>
+
+<div class="modal fade" id="lightbox" tabindex="-1" aria-labelledby="lightboxCaption" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header border-0 pb-0">
+        <p class="modal-title mb-0" id="lightboxCaption">Gallery image</p>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close enlarged image"></button>
+      </div>
+      <div class="modal-body">
+        <img id="lightboxImg" class="lightbox-img" src="" alt="">
+        <p class="field-hint mt-2 mb-0">Demo image (picsum.photos) — not real studio photography.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <footer class="py-5">
   <div class="container d-flex flex-column flex-md-row justify-content-between gap-3">
